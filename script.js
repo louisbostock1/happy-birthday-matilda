@@ -33,7 +33,7 @@ function spawnFlower() {
     flower.style.fontSize = size + "rem";
 
     // Slower, natural duration
-    const duration = 10 + (3 / size) * 2 + Math.random() * 4; // slower than before
+    const duration = 20 + (3 / size) * 2 + Math.random() * 4; // slower than before
     flower.style.setProperty("--duration", duration + "s");
 
     // Full page height
