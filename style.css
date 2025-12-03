@@ -2,11 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300..800;1,300..800&display=swap');
 
 
-
 body {
     margin: 0;
     font-family: 'VT323';
-    background: linear-gradient(135deg, #ff9ec4, #ffd1dc);
+    background: linear-gradient(135deg, #601616, #982540);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,18 +25,16 @@ p {
 }
 
 .add-calendar-container {
-    height: 50em;
+    height: 20em;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
 }
 
 .calendar-button {
-    height: 4em;
-    width: 10em;
+    height: 2em;
+    width: 12em;
     font-size: 4rem;
     margin-top: 1.5em;
     border: none;
@@ -84,8 +81,21 @@ p {
 
 .keep-scrolling {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     text-align: center;
+}
+
+.scroll-arrow {
+   animation: bounce 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
 }
 
 .ticket-img-container {
@@ -122,6 +132,29 @@ p {
 .rainbow-text {
   animation: rainbow 3s linear infinite;
 }
+
+@keyframes sparkle {
+  0%, 100% { text-shadow: 
+      0 0 4px #fff,
+      0 0 8px #ff8ad4,
+      0 0 12px #ff4da6,
+      0 0 20px #ff4da6;
+    opacity: 1;
+  }
+  50% {
+    text-shadow: 
+      0 0 2px #fff,
+      0 0 6px #ffb3e6,
+      0 0 10px #ff72c1,
+      0 0 16px #ff72c1;
+    opacity: 0.75;
+  }
+}
+
+.sparkly {
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
 
 
 

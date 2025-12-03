@@ -1,4 +1,4 @@
-const flowers = ["🌸", "🌺", "🌷"];
+const flowers = ["🌸", "🌺", "🌷",];
 let isFalling = false;
 let flowerInterval = null;
 let activeFlowers = 0;
@@ -76,12 +76,14 @@ function toggleFlowers() {
         isFalling = true;
         button.textContent = "Pause";
         startContinuousRain(); // start slow continuous rain
-        title.classList.add("rainbow-text"); // start rainbow effect
+    
+        title.classList.add("sparkly");   // ADD SPARKLE
     } else {
         isFalling = false;
         button.textContent = "Hit It!";
         clearInterval(flowerInterval);
-        title.classList.remove("rainbow-text"); // stop rainbow effect
+        
+        title.classList.remove("sparkly"); // REMOVE SPARKLE
     }
 }
 
@@ -131,3 +133,4 @@ END:VCALENDAR`;
     document.body.appendChild(flower);
     setTimeout(() => flower.remove(), 6000);
 }
+
